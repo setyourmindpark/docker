@@ -22,4 +22,4 @@ RUN set -o errexit -o nounset \
 
 ENV PATH=${PATH}:${GRADLE_HOME}/bin
 
-CMD ["/bin/bash"]
+CMD ["/bin/bash"] 

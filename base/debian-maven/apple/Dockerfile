@@ -11,4 +11,4 @@ RUN wget --quiet --no-cookies http://apache.tt.co.kr/maven/maven-3/${MAVEN_VERSI
 ENV M3_HOME /opt/maven
 ENV PATH=${PATH}:${M3_HOME}/bin
 
-CMD ["/bin/bash"]
+CMD ["/bin/bash"] 
