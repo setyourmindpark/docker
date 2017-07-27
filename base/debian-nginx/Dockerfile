@@ -1,4 +1,4 @@
-ROM setyourmindpark/debian-utf8
+FROM setyourmindpark/debian-utf8
 MAINTAINER jaehunpark "setyourmindpark@gmail.com"
 
 RUN apt-get update && \
