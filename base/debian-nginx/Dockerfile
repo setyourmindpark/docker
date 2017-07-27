@@ -1,4 +1,4 @@
-FROM setyourmindpark/debian-utf8
+ROM setyourmindpark/debian-utf8
 MAINTAINER jaehunpark "setyourmindpark@gmail.com"
 
 RUN apt-get update && \
@@ -11,9 +11,14 @@ RUN echo 'deb http://nginx.org/packages/debian/ jessie nginx' >> /etc/apt/source
     apt-get update && \
     apt-get install -y nginx
 
+RUN mkdir /var/origin && \
+    cp -r /etc/nginx /var/origin
+
+ADD entrypoint.sh /entrypoint.sh
 
 VOLUME /etc/nginx
+
 EXPOSE 80
 EXPOSE 443
 
-CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["/entrypoint.sh"]
