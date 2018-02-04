@@ -1,7 +1,7 @@
 FROM setyourmindpark/debian-oracle-jdk:8
 MAINTAINER jaehunpark "setyourmindpark@gmail.com"
 
-ENV MAVEN_VERSION=3.5.0
+ENV MAVEN_VERSION=3.5.2
 
 RUN wget --quiet --no-cookies http://apache.tt.co.kr/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz -O /tmp/maven.tar.gz && \
     tar xzvf /tmp/maven.tar.gz -C /opt && \

@@ -5,7 +5,7 @@ RUN apt-get update && \
     apt-get install -y unzip
 
 ENV GRADLE_HOME /opt/gradle
-ENV GRADLE_VERSION 3.5
+ENV GRADLE_VERSION 4.5
 
 ARG GRADLE_DOWNLOAD_SHA256=0b7450798c190ff76b9f9a3d02e18b33d94553f708ebc08ebe09bdf99111d110
 RUN set -o errexit -o nounset \

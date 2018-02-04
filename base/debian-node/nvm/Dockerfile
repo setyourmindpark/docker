@@ -2,7 +2,7 @@ FROM setyourmindpark/debian-utf8
 MAINTAINER jaehunpark "setyourmindpark@gmail.com"
 
 ENV HOME=/root
-ENV NVM_VERSION=v0.33.2
+ENV NVM_VERSION=v0.33.8
 
 RUN apt-get update && \
     apt-get install -y vim && \
